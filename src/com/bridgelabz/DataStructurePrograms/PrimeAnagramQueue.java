@@ -4,6 +4,7 @@ import com.bridgelabz.Util.Util;
 
 public class PrimeAnagramQueue {
 	public static void main(String[] args) {
+		System.out.println("*** Program For Prime Anagram Number Using Queue ***");
 		//creating stack
 		Queue<Integer> queue = new Queue<Integer>(); 
 		
@@ -21,6 +22,7 @@ public class PrimeAnagramQueue {
 				if(isPalindromeNumber) {
 					 queue.enQueue(number);
 				}
+				queue.display();
 			}
 		}
 	}

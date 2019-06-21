@@ -1,6 +1,6 @@
-package com.bridgelabz.DataStructurePrograms;
+package com.bridgelabz.ObjectOrientedPrograms;
 
-public class Queue<T> {
+public class QueueCards<T> {
 	
 	@SuppressWarnings("hiding")
 	class Node<T> {
@@ -17,7 +17,7 @@ public class Queue<T> {
 	Node<T> rear;
 	int size;
 	
-	public Queue() {
+	public QueueCards() {
         front = null;
         rear = null;
         size = 0;
@@ -72,6 +72,10 @@ public class Queue<T> {
 		else {
 			return false;
 		}
+	}
+	public void show() {
+		// TODO Auto-generated method stub
+		
 	}
 	
 }

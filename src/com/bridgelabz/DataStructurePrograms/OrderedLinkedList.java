@@ -54,14 +54,16 @@ public class OrderedLinkedList<T extends Comparable<T> > {
 		while(item.compareTo(temp.data)>0 && temp.next != null ) {
 			temp1 = temp;
 			temp = temp.next;
+			
+		}
+		node.next = temp1.next;
+		temp1.next = node; 
+		if(item.compareTo(temp.data) > 0 && temp.next == null ){
+			node = temp1.next;
+			node.next = temp.next;
+		}
 		}
 		
-	/*	node = temp.next;
-		node.next = null;*/
-	node.next = temp1.next;
-	temp1.next = node;
-		
-		}
 	}
 	
 
@@ -247,4 +249,7 @@ public class OrderedLinkedList<T extends Comparable<T> > {
 			tempNode = tempNode.next;
 		}
 }
+	
+	
+	
 }
