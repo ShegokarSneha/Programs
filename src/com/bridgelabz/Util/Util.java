@@ -55,7 +55,7 @@ public class Util {
 	*/
 	
 	public static String getInputString() {
-		String string = sc.nextLine();
+		String string = sc.next();
 		return string;
 	}
 	

@@ -13,29 +13,50 @@ public class RegexExpression {
 				+ "Please,let us know in case of any clarification. \n\nThank you BridgeLabz 01/01/2016.";
 		System.out.println(bio);
 		String pattern = "[a-zA-Z]+";
+		String name;
+		
+		do {
 		System.out.println("\nEnter the Name of Student:");
-		String name = Util.getInputString();
+		name = Util.getInputString();
 		System.out.println("\nEnter your fullname:-");
 		String fullname = Util.getInputString();
-		@SuppressWarnings("unused")
+	
 		Pattern r = Pattern.compile(pattern);
+		
 		if (Pattern.matches(pattern, name)) {
 			bio = bio.replaceAll("<<name>>", name);
 			bio = bio.replaceAll("<<full name>>", fullname);
 		}
-		System.out.println("\nPlease Enter Your Mobile Number:");
-		String numbers = Util.getInputString();
-		if (Pattern.matches("[789][0-9]{9}", numbers)) {
-			bio = bio.replaceAll("x{10}", numbers);
+		else {
+			System.out.println("Entered Invalid Input");
 		}
+		} while(Pattern.matches(pattern, name) == false);
+		String mobile;
+		do {
+			System.out.println("\nPlease Enter Your Mobile Number:");
+			mobile = Util.getInputString();
+			if (Pattern.matches("[789][0-9]{9}", mobile)) {
+			bio = bio.replaceAll("x{10}", mobile);
+		}
+		else {
+			System.out.println("\nEntered Invalid Number");
+		}
+		}while(Pattern.matches("[789][0-9]{9}", mobile) == false);
+		
+		String date = "";
+		do {
 		System.out.println("\nEnter the Date:");
-		String date = Util.getInputString();
-		if (Pattern.matches("^[0-3][0-9]/[0-1][0-9]/(?:[0-9][0-9])?[0-9][0-9]$", date)) {
+		date = Util.getInputString();
+		if (Pattern.matches("^[1-3][0-9]/[0-1][1-9]/(?:[0-9][0-9])?[0-9][0-9]$", date)) {
 			bio = bio.replaceAll("01/01/2016", date);
 		}
+		else {
+			System.out.println("\nEntered Invalid Date");
+		}
+		}while(Pattern.matches("^[0-9][0-9]/[0-1][1-9]/(?:[0-9][0-9])?[0-9][0-9]$", date) == false);
 		System.out.println(bio);
-
 	}
+
 	
 	public static boolean validateName(String txt)
 	{
