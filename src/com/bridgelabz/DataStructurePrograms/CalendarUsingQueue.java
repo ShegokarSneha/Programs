@@ -1,3 +1,15 @@
+/******************************************************************************
+*  Compilation: javac -d bin CalendarUsingQueue.java 
+*  
+*  Execution:   java -cp bin com.bridgelabz.datastructureprograms.CalendarUsingQueue 
+*  
+*  Purpose: To print Month Calendar Using Queue.
+*  
+*  @author  Sneha
+*  @version 1.0 
+*  @since   14-06-2019
+*
+******************************************************************************/
 package com.bridgelabz.DataStructurePrograms;
 
 import com.bridgelabz.Util.Util;

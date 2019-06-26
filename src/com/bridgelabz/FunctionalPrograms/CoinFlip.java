@@ -1,8 +1,8 @@
 
 /*********************************************************************
-* Compilation: javac -d bin Binary.java
+* Compilation: javac -d bin CoinFlip.java
 * 
-* Execution: java -cp bin com.bridgelabz.AlgorithumPrograms.Binary n
+* Execution: java -cp bin com.bridgelabz.AlgorithumPrograms.CoinFlip
 *
 * Purpose: Determines percentage of head and tail.
 *

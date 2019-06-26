@@ -1,3 +1,15 @@
+/******************************************************************************
+*  Compilation:  javac -d bin PrimeAnagram.java 
+*  
+*  Execution:    java -cp bin com.bridgelabz.datastructureprograms.PrimeAnagram 
+*  
+*  Purpose: Checkes whether given number is Prime anagram or not.
+*  
+*  @author  Sneha
+*  @version 1.0 
+*  @since   14-06-2019
+*
+******************************************************************************/
 package com.bridgelabz.DataStructurePrograms;
 
 import java.util.ArrayList;

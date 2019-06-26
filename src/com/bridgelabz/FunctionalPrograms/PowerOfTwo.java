@@ -1,8 +1,8 @@
 
 /*********************************************************************
-* Compilation: javac -d bin Binary.java
+* Compilation: javac -d bin PowerOfTwo.java
 * 
-* Execution: java -cp bin com.bridgelabz.AlgorithumPrograms.Binary n
+* Execution: java -cp bin com.bridgelabz.AlgorithumPrograms.PowerOfTwo
 *
 * Purpose: Print table of power of two.
 *

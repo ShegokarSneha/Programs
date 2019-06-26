@@ -1,8 +1,21 @@
+/******************************************************************************
+*  Compilation: javac -d bin Calendar.java 
+*  
+*  Execution:   java -cp bin com.bridgelabz.datastructureprograms.Calendar 
+*  
+*  Purpose: To print Month Calendar.
+*  
+*  @author  Sneha
+*  @version 1.0 
+*  @since   14-06-2019
+*
+******************************************************************************/
 package com.bridgelabz.DataStructurePrograms;
 
 import com.bridgelabz.Util.Util;
 
 public class Calendar {
+	
 	public static void main(String[] args) {
 		System.out.println("*** Program to Print Month Calendar ***");
 		System.out.print("\nEnter full year : ");

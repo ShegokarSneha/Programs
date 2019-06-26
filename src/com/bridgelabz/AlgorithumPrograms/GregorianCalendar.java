@@ -1,7 +1,4 @@
 package com.bridgelabz.AlgorithumPrograms;
-
-
-
 /*
 * JAVA STYLE GUIDE - SOURCE FILE HEADER STYLE
 * NOTE - A SINGLE BLANK LINE SEPARATES THE TWO BLOCKS i.e. BETWEEN
@@ -10,18 +7,18 @@ HEADER, PACKAGE,
 IMPORT STATEMENTS, CLASS DECLARATION, etc
 */
 
-/*********************************************************************
-* Compilation: javac -d bin Binary.java
+/****************************************************************************
+* Compilation: javac -d bin GregorianCalendar.java
 * 
-* Execution: java -cp bin com.bridgelabz.AlgorithumPrograms.Binary n
+* Execution: java -cp bin com.bridgelabz.AlgorithumPrograms.GregorianCalendar 
 *
-* Purpose: Determines whether or not n is prime.
+* Purpose: Determines the Day of the entered Date.
 *
 * @author Sneha
 * @version 1.0
 * @since 03-06-2019
 *
-*********************************************************************/
+******************************************************************************/
 
 /*
 * JAVA STYLE GUIDE - PACKAGE NAMING STYLE

@@ -1,7 +1,7 @@
 /*********************************************************************
-* Compilation: javac -d bin Binary.java
+* Compilation: javac -d bin StringPermutation.java
 * 
-* Execution: java -cp bin com.bridgelabz.AlgorithumPrograms.Binary n
+* Execution: java -cp bin com.bridgelabz.AlgorithumPrograms.StringPermutation
 *
 * Purpose: Determines permutations of string.
 *
@@ -16,6 +16,7 @@ package com.bridgelabz.FunctionalPrograms;
 import com.bridgelabz.Util.Util;
 
 public class StringPermutation {
+	
 	public static void main(String []args) {
 		System.out.println("*** Program For String Permutation using Recursion ***");
 		System.out.println("\nEnter String for Permutating:");

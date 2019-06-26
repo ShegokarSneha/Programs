@@ -1,9 +1,9 @@
 package com.bridgelabz.AlgorithumPrograms;
 
-/*********************************************************************
-* Compilation: javac -d bin Binary.java
+/*************************************************************************
+* Compilation: javac -d bin BinarySearch.java
 * 
-* Execution: java -cp bin com.bridgelabz.AlgorithumPrograms.Binary n
+* Execution: java -cp bin com.bridgelabz.AlgorithumPrograms.BinarySearch 
 *
 * Purpose: Determines the index of the variable in the array.
 *
@@ -11,7 +11,7 @@ package com.bridgelabz.AlgorithumPrograms;
 * @version 1.0
 * @since 03-06-2017
 *
-*********************************************************************/
+**************************************************************************/
 
 import com.bridgelabz.Util.Util;
 

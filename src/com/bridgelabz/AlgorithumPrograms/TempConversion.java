@@ -1,19 +1,10 @@
 
-
-/*
-* JAVA STYLE GUIDE - SOURCE FILE HEADER STYLE
-* NOTE - A SINGLE BLANK LINE SEPARATES THE TWO BLOCKS i.e. BETWEEN
-HEADER, PACKAGE,
-*
-IMPORT STATEMENTS, CLASS DECLARATION, etc
-*/
-
 /*********************************************************************
-* Compilation: javac -d bin Binary.java
+* Compilation: javac -d bin TempConversion.java
 * 
-* Execution: java -cp bin com.bridgelabz.AlgorithumPrograms.Binary n
+* Execution: java -cp bin com.bridgelabz.AlgorithumPrograms.TempConversion
 *
-* Purpose: Determines whether or not n is prime.
+* Purpose: Convert entered temprature value in Celcuis or Fahrenheit.
 *
 * @author Sneha
 * @version 1.0
@@ -28,12 +19,6 @@ IMPORT STATEMENTS, CLASS DECLARATION, etc
 package com.bridgelabz.AlgorithumPrograms;
 
 import com.bridgelabz.Util.Util;
-
-/*
-* JAVA STYLE GUIDE - IMPORT STATEMENtS
-* NOTE : NO WILDCARD IMPORTS i.e. import java.lang.*;
-* NO LINE WRAPING - APPEARS IN ONE LINE
-*/
 
 public class TempConversion {
 	

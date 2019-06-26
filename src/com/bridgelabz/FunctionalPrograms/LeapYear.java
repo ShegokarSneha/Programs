@@ -1,8 +1,8 @@
 
 /*********************************************************************
-* Compilation: javac -d bin Binary.java
+* Compilation: javac -d bin LeapYear.java
 * 
-* Execution: java -cp bin com.bridgelabz.AlgorithumPrograms.Binary n
+* Execution: java -cp bin com.bridgelabz.AlgorithumPrograms.LeapYear
 *
 * Purpose: Determines leap year or not.
 *

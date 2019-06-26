@@ -72,7 +72,7 @@ public class DeckCardLogic {
 	
 	
 	public  void sortCards(String[] cards) {
-		//String[] rank={"2", "3", "4", "5", "6", "7", "8", "9", "10","Jack", "Queen", "King", "Ace"};
+		
 		String queue ;
 		for(int i = 0 ; i < cards.length;i++) {
 			queue = cards[i];

@@ -1,3 +1,16 @@
+/******************************************************************************
+*  Compilation:  javac -d bin PrimeAnagramStack.java 
+*  
+*  Execution:    java -cp bin com.bridgelabz.datastructureprograms.PrimeAnagramStack 
+*  
+*  Purpose: Checkes whether given number is Prime anagram or not using Stack.
+*  
+*  @author  Sneha
+*  @version 1.0 
+*  @since   14-06-2019
+*
+******************************************************************************/
+
 package com.bridgelabz.DataStructurePrograms;
 
 import java.util.ArrayList;

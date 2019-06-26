@@ -1,13 +1,14 @@
 /******************************************************************************
-	 *  Compilation:  javac -d bin BalancedExpression.java
-	 *  Execution:    java -cp bin com.bridgelabz.datastructureprograms.BalancedExpression
-	 *  
-	 *  Purpose: Determines whether given arithmetic expression is balanced or not.
-	 *
-	 *  @author  Sneha
-	 *  @version 1.0
-	 *  @since   14-06-2019
-	 *
+*  Compilation:  javac -d bin BalancedExpression.java 
+*  
+*  Execution:    java -cp bin com.bridgelabz.datastructureprograms.BalancedExpression 
+*  
+*  Purpose: Determines whether given arithmetic expression is balanced or not.
+*  
+*  @author  Sneha
+*  @version 1.0 
+*  @since   14-06-2019
+*
 ******************************************************************************/
   
      /**

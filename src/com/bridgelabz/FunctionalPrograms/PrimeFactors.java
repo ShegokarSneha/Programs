@@ -1,8 +1,8 @@
 
 /*********************************************************************
-* Compilation: javac -d bin Binary.java
+* Compilation: javac -d bin PrimeFactors.java
 * 
-* Execution: java -cp bin com.bridgelabz.AlgorithumPrograms.Binary n
+* Execution: java -cp bin com.bridgelabz.AlgorithumPrograms.PrimeFactors
 *
 * Purpose: Determines whether or not n is prime.
 *

@@ -1,3 +1,15 @@
+/******************************************************************************
+*  Compilation: javac -d bin Calendar2DArray.java 
+*  
+*  Execution:   java -cp bin com.bridgelabz.datastructureprograms.Calendar2DArray 
+*  
+*  Purpose: To print Month Calendar in 2D Array.
+*  
+*  @author  Sneha
+*  @version 1.0 
+*  @since   14-06-2019
+*
+******************************************************************************/
 package com.bridgelabz.DataStructurePrograms;
 
 import com.bridgelabz.Util.Util;

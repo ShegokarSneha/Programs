@@ -24,4 +24,9 @@ public class StockDetails {
 	public void setShareprice(long shareprice) {
 		this.shareprice = shareprice;
 	}
+	
+	public String toString() {
+		return"Share Name: "+ getSharename()+" No of Shares: "+ 
+	getNoofshares()+ " Share Price: "+ getShareprice()+"\n";
+	}
 }

@@ -1,3 +1,16 @@
+/******************************************************************************
+*  Compilation:  javac -d bin BankingCounter.java 
+*  
+*  Execution:    java -cp bin com.bridgelabz.datastructureprograms.BankingCounter 
+*  
+*  Purpose: Performs the Banking Cash Counter Operation Using Queue.
+*  
+*  @author  Sneha
+*  @version 1.0 
+*  @since   14-06-2019
+*
+******************************************************************************/
+  
 package com.bridgelabz.DataStructurePrograms;
 
 import com.bridgelabz.Util.Util;

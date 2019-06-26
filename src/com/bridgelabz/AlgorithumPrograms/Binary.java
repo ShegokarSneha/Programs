@@ -1,7 +1,7 @@
 /*********************************************************************
-* Compilation: javac -d bin Binary.java
+* Compilation: javac -d bin StopWatch.java
 * 
-* Execution: java -cp bin com.bridgelabz.AlgorithumPrograms.Binary n
+* Execution: java -cp bin com.bridgelabz.AlgorithumPrograms.StopWatch
 *
 * Purpose: Determines reverse equivalent of binary number. 
 *

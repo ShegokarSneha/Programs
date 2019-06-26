@@ -11,11 +11,11 @@ IMPORT STATEMENTS, CLASS DECLARATION, etc
 */
 
 /*********************************************************************
-* Compilation: javac -d bin Binary.java
+* Compilation: javac -d bin BubbleSort.java
 * 
-* Execution: java -cp bin com.bridgelabz.AlgorithumPrograms.Binary n
+* Execution: java -cp bin com.bridgelabz.AlgorithumPrograms.BubbleSort
 *
-* Purpose: Determines whether or not n is prime.
+* Purpose: Sort the Array of Integer and String Using Bubble Sort Method
 *
 * @author Sneha
 * @version 1.0

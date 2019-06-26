@@ -8,6 +8,8 @@ import com.bridgelabz.Util.Util;
 public class RegexExpression {
 	static  Pattern pattern = null;
 	public static void main(String[] args) {
+		System.out.println("**** Program using REGEX Function ****");
+		
 		String bio = "Hello <<name>>, \nWe have your full"
 				+ "name as <<full name>> in our system. \nyour contact number is 91-xxxxxxxxxx.\n"
 				+ "Please,let us know in case of any clarification. \n\nThank you BridgeLabz 01/01/2016.";
@@ -47,13 +49,13 @@ public class RegexExpression {
 		do {
 		System.out.println("\nEnter the Date:");
 		date = Util.getInputString();
-		if (Pattern.matches("^[1-3][0-9]/[0-1][1-9]/(?:[0-9][0-9])?[0-9][0-9]$", date)) {
+		if (Pattern.matches("^[1-3][0-9]/[0-1][0-9]/(?:[0-9][0-9])?[0-9][0-9]$", date)) {
 			bio = bio.replaceAll("01/01/2016", date);
 		}
 		else {
 			System.out.println("\nEntered Invalid Date");
 		}
-		}while(Pattern.matches("^[0-9][0-9]/[0-1][1-9]/(?:[0-9][0-9])?[0-9][0-9]$", date) == false);
+		}while(Pattern.matches("^[0-9][0-9]/[0-1][0-9]/(?:[0-9][0-9])?[0-9][0-9]$", date) == false);
 		System.out.println(bio);
 	}
 

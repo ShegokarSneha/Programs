@@ -18,7 +18,7 @@ public class InventoryManager {
 		LinkedList<InventoryDetails> list = new LinkedList<>();
 		try {
 			list = mapper.readValue(file,new TypeReference<LinkedList<InventoryDetails>>(){});
-		//	System.out.println(list);
+			System.out.println(list.toString());
 			long eachinventory = 0;
 			long total = 0;
 			for(int i = 0; i < list.size(); i++) {

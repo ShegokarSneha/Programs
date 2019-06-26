@@ -1,3 +1,15 @@
+/******************************************************************************
+*  Compilation:  javac -d bin PalindromeChecker.java 
+*  
+*  Execution:    java -cp bin com.bridgelabz.datastructureprograms.PalindromeChecker 
+*  
+*  Purpose: Checkes whether given String is Palindrome or not.
+*  
+*  @author  Sneha
+*  @version 1.0 
+*  @since   14-06-2019
+*
+******************************************************************************/
 package com.bridgelabz.DataStructurePrograms;
 
 import com.bridgelabz.Util.Util;

@@ -1,3 +1,16 @@
+/*********************************************************************
+* Compilation: javac -d bin CouponNumber.java
+* 
+* Execution: java -cp bin com.bridgelabz.AlgorithumPrograms.CouponNumber
+*
+* Purpose: Generate Distinct Coupon Number.
+*
+* @author Sneha
+* @version 1.0
+* @since 03-06-2019
+*
+*********************************************************************/
+
 package com.bridgelabz.FunctionalPrograms;
 
 import com.bridgelabz.Util.Util;
