@@ -28,21 +28,21 @@ public class AddressBookManager {
 		
 		case 1:
 			System.out.println("***** Creating New Address Book *****");
-			AddressBookMethods.addPerson();
+			AddressBookMethods.createNewAddressBook();
 			break;
 			
 		case 2:
 			System.out.println("***** Opening Existing Address Book *****");
-			AddressBookMethods.printEntries();
 			AddressBookMethods.existing();
 			break;
 			
 		case 3:
-			System.out.println("case 3");
+			AddressBookMethods.save();
+			System.out.println("Changes Saved Successfully");
 			break;
 			
 		case 4:
-			System.out.println("case 4");
+			AddressBookMethods.saveAs();
 			break;
 			
 		case 5:
@@ -52,7 +52,8 @@ public class AddressBookManager {
 		default:
 			System.out.println("You Entered Wrong Choice...!");
 			}
-		}while(choice>0 && choice <= 5);	
+		}while(choice>0 && choice <= 5);
+		return;
 	}
 
 }

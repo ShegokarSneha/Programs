@@ -30,7 +30,7 @@ public class Address {
 	}
 	
 	public String toString() {
-		return "City : "+ getCity()+ " State : "+getState()+" Zip Code : "+getZipCode();
+		return getCity()+" "+getState()+" "+getZipCode();
 	}
 
 }

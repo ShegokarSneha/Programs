@@ -1,12 +1,10 @@
 package AddressBook;
 
-import java.util.LinkedList;
-
 public class Person {
 	
 	String fname;
 	String lname;
-	LinkedList<Address> address;
+	Address address;
 	String phoneno;
 	
 	public String getFname() {
@@ -25,11 +23,11 @@ public class Person {
 		this.lname = lname;
 	}
 	
-	public LinkedList<Address> getAddress() {
+	public Address getAddress() {
 		return address;
 	}
 	
-	public void setAddress(LinkedList<Address> address) {
+	public void setAddress(Address address) {
 		this.address = address;
 	}
 	
@@ -42,8 +40,10 @@ public class Person {
 	}
 	
 	public String toString() {
-		return "First Name : "+getFname()+" Last Name : "+getLname()+
-				" Address : "+getAddress().toString()+" Phone No : "+getPhoneno();
+		return getFname()+" \t"+getLname()+
+				"\t"+getAddress().toString()+"\t"+getPhoneno();
 	}
 
 }
+
+
