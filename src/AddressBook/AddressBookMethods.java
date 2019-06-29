@@ -130,7 +130,7 @@ public class AddressBookMethods {
 		String phoneno = Util.getInputString();
 		person.setPhoneno(phoneno);
 		person.setAddress(address);
-		list.add(person);
+	//	list.add(person);
 		save(filename);
 	//	mapper.writeValue(new File(location+filename+".json"), list);
 		System.out.println("\nData Added Successfully....");
@@ -327,7 +327,19 @@ public class AddressBookMethods {
 	}
 	
 	public static void saveAs() {
-		// TODO Auto-generated method stub
+		File file = new File(location+"JsonPersonDetails"+".txt");
+		try {
+			boolean isCreate = file.createNewFile();
+			LinkedList<Person> lList = mapper.readValue(new File(location+"Person.json"), 
+					new TypeReference<LinkedList<Person>>() {});
+			mapper.writeValue(new File(location+"JsonPersonDetails.txt"),lList);
+			
+			if(isCreate) {
+				System.out.println("file saved.");
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 		
 	}
 
@@ -404,11 +416,12 @@ private static void save(String filename) throws JsonParseException, JsonMapping
 		
 		if(list.size() == 0) {
 			mapper.writeValue(new File(location + filename + ".json"),person);
-		}
-		else {
-			list.add(person);
-			mapper.writeValue(new File(location + filename + ".json"),list);
-		}
+			}
+			else {
+				list.add(person);
+				mapper.writeValue(new File(location + filename + ".json"),list);
+			}
+		
 		}
 	catch (JsonParseException e) {
 		e.printStackTrace();
@@ -417,7 +430,9 @@ private static void save(String filename) throws JsonParseException, JsonMapping
 		e.printStackTrace();
 		}
 	catch (IOException e) {
-		e.printStackTrace();
+		list.add(person);
+		mapper.writeValue(new File(location + filename + ".json"),list);
+		System.out.println("First Element Added");
 		}
 	}
 }

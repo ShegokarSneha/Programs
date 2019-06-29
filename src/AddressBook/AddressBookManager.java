@@ -17,10 +17,10 @@ public class AddressBookManager {
 		do {
 		System.out.println("\n\tWhat you Want To Do ?");
 		System.out.println("\nEnter Your Choice:");
-		System.out.println("\n 1. Create New Address Book \n"
-				+ " 2. Open Existing Address Book \n "
-				+ "3. Save Address Book \n "
-				+ "4. Save Address Book As \n "
+		System.out.println("\n1. Create New Address Book \n"
+				+ "2. Open Existing Address Book \n"
+				+ "3. Save Address Book \n"
+				+ "4. Save Address Book As \n"
 				+ "5. Quit Program");
 		choice = Util.getInputInteger();
 		

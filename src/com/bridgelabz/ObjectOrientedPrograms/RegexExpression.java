@@ -7,6 +7,7 @@ import com.bridgelabz.Util.Util;
 
 public class RegexExpression {
 	static  Pattern pattern = null;
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		System.out.println("**** Program using REGEX Function ****");
 		
