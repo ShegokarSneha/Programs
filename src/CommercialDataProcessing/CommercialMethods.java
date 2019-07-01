@@ -37,13 +37,13 @@ public class CommercialMethods {
 			return;
 		}
 		else {
-			System.out.println("\n************* User Shares Before Buying *************\n");
-			uPrintReport();
-			
+		
 			for(int i = 0; i < clist.size(); i++) {
 				
 				if(clist.get(i).getStocksymbol().equalsIgnoreCase(symbol)) {
 					
+					System.out.println("\n************* User Shares Before Buying *************\n");
+					uPrintReport();
 					int shareprice = (int)clist.get(i).getShareprice();
 					System.out.println(shareprice);
 					int noofshares = (int)(amount/shareprice);
@@ -69,6 +69,10 @@ public class CommercialMethods {
 							}
 						}
 					}
+				else {
+					System.out.println("\nYou Entered Invalid Input");
+					return;
+				}
 				}
 			}
 		return;
@@ -88,14 +92,14 @@ public class CommercialMethods {
 				return;
 				}
 			else {
-				System.out.println("\n****************** Available Company Shares ******************\n");
-				printReport();
 				
 				for(int i = 0; i < ulist.size(); i++) {
 					
 				//for loop for update the company Account.
 					
 					if(ulist.get(i).getStocksymbol().equalsIgnoreCase(symbol)) {
+						System.out.println("\n****************** Available Company Shares ******************\n");
+						printReport();
 						int shareprice = (int)ulist.get(i).getShareprice();
 						int noofshares = (int)(amount/shareprice);
 						int shares = ulist.get(i).getNoofshares();
@@ -117,6 +121,9 @@ public class CommercialMethods {
 								}
 							}
 						}
+					else {
+						System.out.println("There is no Symbol Present In the stock");
+					}
 				}
 			}
 		} catch (JsonParseException e) {

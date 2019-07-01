@@ -1,10 +1,10 @@
 package ClinicManagement;
 
-public class Patient {
+public class Patients {
 	int id;
 	String name;
 	int age;
-	String mobileno;
+	String mobileNo;
 	
 	public int getId() {
 		return id;
@@ -30,15 +30,16 @@ public class Patient {
 		this.age = age;
 	}
 	
-	public String getMobileno() {
-		return mobileno;
+	public String getMobileNo() {
+		return mobileNo;
 	}
 	
-	public void setMobileno(String mobileno) {
-		this.mobileno = mobileno;
+	public void setMobileNo(String mobileNo) {
+		this.mobileNo = mobileNo;
 	}
 	
 	public String toString() {
-		return getId()+"\t"+getName()+"\t"+getAge()+"\t"+getMobileno();
+		return getId()+"\t"+getName()+"\t"+getAge()+"\t"+getMobileNo();
 	}
+
 }

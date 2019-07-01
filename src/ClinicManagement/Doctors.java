@@ -1,18 +1,12 @@
 package ClinicManagement;
 
-public class Doctor {
+public class Doctors {
 	int id;
 	String name;
 	String specialization;
 	String availability;
-	
-	public String getName() {
-		return name;
-	}
-	
-	public void setName(String name) {
-		this.name = name;
-	}
+	int amcount;
+	int pmcount;
 	
 	public int getId() {
 		return id;
@@ -20,6 +14,14 @@ public class Doctor {
 	
 	public void setId(int id) {
 		this.id = id;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
 	}
 	
 	public String getSpecialization() {
@@ -38,7 +40,24 @@ public class Doctor {
 		this.availability = availability;
 	}
 	
-	public String toString() {
-		return getId()+"\t"+getName()+"\t"+getSpecialization()+"\t"+getAvailability();
+	public int getAmcount() {
+		return amcount;
 	}
+	
+	public void setAmcount(int amcount) {
+		this.amcount = amcount;
+	}
+	
+	public int getPmcount() {
+		return pmcount;
+	}
+	
+	public void setPmcount(int pmcount) {
+		this.pmcount = pmcount;
+	}
+	
+	public String toString() {
+		return getId()+"\t\t"+getName()+"\t\t"+getSpecialization()+"\t\t\t\t"+getAvailability();
+	}
+
 }
