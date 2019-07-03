@@ -1,4 +1,4 @@
-package DesignPatterns;
+package SingletonDesignPatterns;
 
 public class StaticBlockInitialization {
 	
@@ -11,12 +11,13 @@ public class StaticBlockInitialization {
 	static{
         try{
         	staticBlockInstance = new StaticBlockInitialization();
-        }catch(Exception e){
+        }
+        catch(Exception e) {
             throw new RuntimeException("Exception occured in creating singleton instance");
         }
     }
     
-    public static StaticBlockInitialization getInstance(){
+    public static StaticBlockInitialization getInstance() {
         return staticBlockInstance;
     }
 

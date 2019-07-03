@@ -1,4 +1,4 @@
-package DesignPatterns;
+package SingletonDesignPatterns;
 
 public class LazyInitialization {
 	
@@ -10,10 +10,9 @@ public class LazyInitialization {
 	public static LazyInitialization getInstance() {
 		if(lazyInstance == null) {
 			return lazyInstance = new LazyInitialization();
-		}
+			}
 		else {
-		return lazyInstance;
+			return lazyInstance;
+			}
 		}
 	}
-
-}

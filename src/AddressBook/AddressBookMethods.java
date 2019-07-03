@@ -2,8 +2,8 @@ package AddressBook;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.Collections;
-import java.util.Comparator;
+/*import java.util.Collections;
+import java.util.Comparator;*/
 import java.util.LinkedList;
 
 import org.codehaus.jackson.JsonGenerationException;
@@ -251,12 +251,16 @@ public class AddressBookMethods {
 		try {
 			list = mapper.readValue(new File(location + filename + ".json"),
 				new TypeReference<LinkedList<Person>>() {});
-			Collections.sort(list,new SortZipCode());
+		//	Collections.sort(list,new SortZipCode());
 			System.out.println("\n************** Address Book Data Sort By Zip Code *************");
 			System.out.println("\nFirst Name \t Last Name \t Address \t\t Phone No");
-			for(Person p : list) {
+			
+			list.sort((Person p1, Person p2)->p1.getAddress().getZipCode().compareToIgnoreCase(p2.getAddress().getZipCode()));
+			list.forEach((person)->System.out.println(person));
+			
+		/*	for(Person p : list) {
 				System.out.println(p);
-				}
+				}*/
 			System.out.println("Sorted Successfully.....");
 			}
 		catch (JsonParseException e) {
@@ -274,13 +278,16 @@ public class AddressBookMethods {
 		try {
 			list = mapper.readValue(new File(location + filename + ".json"),
 				new TypeReference<LinkedList<Person>>() {});
-			Collections.sort(list,new SortName());
+		//	Collections.sort(list,new SortName());
+			
 			System.out.println("\n************** Address Book Data Sort By Name *************");
 			System.out.println("\nFirst Name \t Last Name \t Address \t\t Phone No");
-			for(Person p : list) {
+			list.sort((Person p1, Person p2)->p1.getFname().compareToIgnoreCase(p2.getFname()));
+			list.forEach((person)->System.out.println(person));
+		/*	for(Person p : list) {
 				System.out.println(p);
-				}
-			System.out.println("Sorted Successfully.....");
+				}*/
+			System.out.println("\nSorted Successfully.....");
 			}
 		catch (JsonParseException e) {
 			e.printStackTrace();
@@ -436,13 +443,14 @@ private static void save(String filename) throws JsonParseException, JsonMapping
 		}
 	}
 }
-
+/*
 
 class SortZipCode implements Comparator<Person>{ 
 	  public int compare(Person p1, Person p2) {
 	        if((p1.getAddress().getZipCode()).compareTo(p2.getAddress().getZipCode()) > 0){
 	            return 1;
-	        } else {
+	        } 
+	        else {
 	            return -1;
 	        }
 	        }
@@ -452,9 +460,10 @@ class SortName implements Comparator<Person>{
 	  public int compare(Person p1, Person p2) {
 	        if((p1.getFname()).compareTo(p2.getFname()) > 0){
 	            return 1;
-	        } else {
+	        } 
+	        else {
 	            return -1;
 	        }
-	    }
-}
+	    }*/
+
 

@@ -51,12 +51,12 @@ public class CommercialMethods {
 					int shares = clist.get(i).getNoofshares();
 					int remshare = shares - noofshares;
 					clist.get(i).setNoofshares(remshare);
-					System.out.println(clist.get(i).getNoofshares());
+				//  System.out.println(clist.get(i).getNoofshares());
 			
 					System.out.println("\n************* Company Shares After Buying *************\n");
 					mapper.writeValue(new File(companyFilePath),clist);
 					printReport();
-					
+					                                                        
 					for(int j = 0; j < ulist.size(); j++) {
 						if(ulist.get(j).getStocksymbol().equalsIgnoreCase(symbol)) {
 							int usershares = ulist.get(j).getNoofshares();

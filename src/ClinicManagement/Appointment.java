@@ -1,5 +1,8 @@
 package ClinicManagement;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 public class Appointment {
 	int doctorid;
 	String doctorname;
@@ -8,6 +11,14 @@ public class Appointment {
 	int patientage;
 	String patientmobileno;
 	String availability;
+	//Create formatter
+	DateTimeFormatter format = DateTimeFormatter.ofPattern("dd/MM/YYYY  HH:MM:SS");
+		 
+		//Local date time instance
+	LocalDateTime localDateTime = LocalDateTime.now();
+		 
+		//Get formatted String
+	String date = format.format(localDateTime);
 	
 	public int getDoctorid() {
 		return doctorid;
@@ -17,6 +28,14 @@ public class Appointment {
 		this.doctorid = doctorid;
 	}
 	
+	public String getDate() {
+		return date;
+	}
+
+	public void setDate(String date) {
+		this.date = date;
+	}
+
 	public String getDoctorname() {
 		return doctorname;
 	}

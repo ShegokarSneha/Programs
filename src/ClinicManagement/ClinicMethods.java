@@ -31,6 +31,7 @@ public class ClinicMethods {
 	String specialization;
 	String mobileno;
 	String availability;
+	String date;
 
 	public void addDetails() throws JsonGenerationException, JsonMappingException, IOException {
 		int choice = 0;
@@ -176,7 +177,90 @@ public class ClinicMethods {
 	}
 
 	public void fixAppointment() {
-		// TODO Auto-generated method stub
+		int temp;
+		int count = 0;
+		String doctorname = "";
+		int choice = 0;
+		try {
+			plist = mapper.readValue(new File(location + patientfile + ".json"),
+					new TypeReference<LinkedList<Patients>>() {});
+			dlist = mapper.readValue(new File(location + doctorfile + ".json"),
+					new TypeReference<LinkedList<Doctors>>() {});
+			System.out.println("\nFor Fixing Appointment Enter Details:");
+			System.out.println("\nEnter Doctor ID :");
+			int doctorid = Util.getInputInteger();
+			System.out.println("\nEnter Patient ID :");
+			id = Util.getInputInteger();
+			System.out.println("\nEnter Patient Name:");
+			name = Util.getInputString();
+			
+			System.out.println("\nEnter Patient Mobile Number:");
+			mobileno = Util.getInputString();
+			System.out.println("\nEnter Patient Age:");
+			age = Util.getInputInteger();
+			do {
+			System.out.println("\nEnter Date to take Appointment:");
+			date = Util.getInputString();
+			for(int i = 0 ; i < dlist.size(); i++) {
+				if(dlist.get(i).getId() == doctorid) {
+					doctorname = dlist.get(i).getName();
+					availability = dlist.get(i).getAvailability();
+					if(dlist.get(i).getAvailability().equalsIgnoreCase("AM")) {
+						if(dlist.get(i).getAmcount() > 5) {
+							System.out.println("Doctor Already Have Appointments");
+							return;
+						}
+						else {
+							temp = dlist.get(i).getAmcount();
+							dlist.get(i).setAmcount(temp+1);
+							saveDetails(doctorfile);
+							count++;
+						}
+					}
+					else if(dlist.get(i).getAvailability().equalsIgnoreCase("PM")){
+						if(dlist.get(i).getPmcount() > 5) {
+							System.out.println("Doctor Already Have Appointments");
+							return;
+						}
+						else {
+							temp = dlist.get(i).getAmcount();
+							dlist.get(i).setPmcount(temp+1);
+							saveDetails(doctorfile);
+							count++;
+							}
+						}
+					}
+				}
+			if(count == 0) {
+			System.out.println("\nDoctor Already Have Fixed Appointments.\nTry For Another Date");
+			System.out.println("\nDo You Want To Fix an Appointment On other Date:\n1. Yes \n2. No");
+			choice = Util.getInputInteger();
+			}
+			}while(choice == 1);
+			appointment.setDoctorid(doctorid);
+			appointment.setDoctorname(doctorname);
+			appointment.setAvailability(availability);
+			appointment.setDate(date);
+			appointment.setPatientage(age);
+			appointment.setPatientid(id);
+			appointment.setPatientname(name);
+			appointment.setPatientmobileno(mobileno);
+			alist.add(appointment);
+			saveDetails(appointmentfile);
+			System.out.println("Appointment Fixed");
+			}
+		catch (JsonParseException e) {
+			e.printStackTrace();
+			}
+		catch (JsonMappingException e) {
+			e.printStackTrace();
+			}
+		catch (IOException e) {
+			e.printStackTrace();
+		}
+	/*		mapper.writeValue(new File(location + appointmentfile+".json"), alist);
+			System.out.println("Appointment Fixed");
+			System.out.println("First Appointment Added */
 		
 	}
 
