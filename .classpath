@@ -8,5 +8,6 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="/home/admin1/Downloads/jackson-all-1.9.0.jar"/>
 	<classpathentry kind="lib" path="/home/admin1/Downloads/json-simple-1.1.jar"/>
+	<classpathentry kind="lib" path="/home/admin1/Downloads/jar_files/mysql-connector-java-8.0.11.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
